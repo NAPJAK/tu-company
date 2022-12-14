@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+   <style>
+    *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.animation{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(104, 188, 235, 0.8) 0%, rgba(43, 183, 180, 0.7) 50%, rgba(49, 143, 219, 1) 100%);
+}
+
+.box div{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.box div:nth-child(1){
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4){
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5){
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6){
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7){
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8){
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9){
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10){
+  top: 20%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: scale(0) translate(0) rotate(0);
+    opacity: 1;
+  }
+  
+  100%{
+    transform: scale(1.7) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.main-background{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transperant;    
+}
+
+.logo{
+  width: 275px;
+  display: block;
+  padding-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  color: white;
+  margin-top: 254px;
+  text-align: center;
+  font-weight: regular;
+}
+
+p{
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 16px;
+}
+.button{
+  text-align: center;
+}
+
+.btn:hover{
+  background-color: white;
+  color: #278FD7;
+  font-weight: 800;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 56px;
+  padding: 19px 70px;
+  text-decoration: none;
+  border-radius: 36px;
+  border: solid 4px white;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.6s;
+}
+
+.icons{
+  margin-top: 264px;
+  float: right;
+  margin-right: 120px;
+  margin-bottom: 88px;
+}
+
+.icons i{
+  color: white;
+}
+
+.home{
+  margin-left: 32px;
+}
+   </style> 
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Start</title>
+    <script src="https://kit.fontawesome.com/9be7b2bfa9.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+   <div class = "animation">
+     <div class = "main-background">
+   <img class = "logo" src = "https://i.postimg.cc/kX0YVj8K/logo-4.png"></img> 
+    <h1>더 나은 미래를 만드는 공학기술 선도대학</h1>
+    <p>한국공학대학교 기업박람회에 오신 것을 환영합니다</p>
+  <div class = "button">
+    <a class = "btn" href = "main.html">홈페이지 접속</a> 
+  </div>
+  
+  <div class = "icons">
+    <a class = "sound" href = "#"><i class="fa-solid fa-volume-high fa-2x"></i></a>
+    <a class = "home" href = "https://www.tukorea.ac.kr/tukorea/index.do" target = "_blank"><i class="fa-solid fa-house fa-2x"></i></a>
+  </div>
+  
+  </div>
+    <div class = "box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>  
+  </div>
+
+  <script type="text/javascript">
+    (function(w, d, a){
+        w.__beusablerumclient__ = {
+            load : function(src){
+                var b = d.createElement("script");
+                b.src = src; b.async=true; b.type = "text/javascript";
+                d.getElementsByTagName("head")[0].appendChild(b);
+            }
+        };w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
+    })(window, document, "//rum.beusable.net/load/b221215e021050u345");
+    </script>  
+</body>    
+</html>

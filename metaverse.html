@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.header{
+  width: 100%;
+  height: 680px;
+  background-image: url('https://i.postimg.cc/k4RyCtMq/product-school-n-Ov-Ia-x-tfo-unsplash-2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .logo{
+  width: 275px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav{
+  padding-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn{
+  font-family: 'Noto Sans KR', sans-serif;
+  display: inline-block;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 36px;
+  border: solid 4px white;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  transition: all 0.6s; 
+}
+
+.btn:hover{
+  background-color: white;
+  color: #278FD7;
+  font-weight: 800;
+}
+
+.nav .category{
+  display: flex;
+  list-style: none;
+  margin-right: 80px;
+}
+
+.category li a{
+  positon: inline-block;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.ct2{
+  margin-left: 24px;
+}
+
+.ct3{
+  margin-left: 24px;
+}
+.category li a:before{
+  content: '';
+  position: absolute;
+  background-color: #278FD7;
+  height: 3px;
+  margin-top: 36px;
+  width: 0px;
+  
+  transition: all 0.3s ease;
+}
+
+.category li a:hover:before{
+  width: 88px;
+}
+
+.text{
+  margin-top: 136px;
+  margin-left: 80px;
+}
+.main-text{
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+}
+
+.sub-text{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: white;
+  margin-top: 16px;
+}
+
+.sec_a{
+  text-align: center;
+  margin-top: 120px;
+}
+
+.name{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #424242;
+}
+
+.eng_name{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  color: #278FD7;
+  font-weight: regular;
+}
+
+.sec_a div{
+ width: 32px;
+ height: 8px;
+ background-color: #278FD7;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 16px;
+ margin-bottom: 16px;
+}
+
+.explain{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: #424242;
+  font-weight: medium;
+  margin-top: 8px;
+}
+
+.intro1{
+  width: 1280px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.intro-text{
+  margin-left: 32px;
+}
+.intro-text1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #424242;
+}
+
+.intro-text2{
+  font-size: 24px;
+  font-weight: 300;
+  color: #5AA2E7;
+}
+
+.intro-text3{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 24px;
+  font-size: 20px;
+  color: #424242;
+  font-weight: 300;
+}
+
+.con_a{
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.metaverse-intro{
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  margin-top: 96px;
+  color: #424242;
+}
+
+.metaverse-intro h2{
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 32px;
+padding-top: 64px;
+}
+
+.metaverse-intro p{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 16px;
+  font-size: 24px;
+  color: #424242;
+}
+
+.metaverse-space{
+  width: 1280px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-name{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #424242;
+  font-weight: medium;
+  font-size: 20px;
+  margin-top:8px;
+  padding-bottom: 64px;
+}
+
+.metaverse-space .AB{
+  color: #278FD7;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.identity-color{
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 96px;
+}
+
+.color-text{
+  text-align: right;
+}
+.color-text1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px; 
+  font-weight: 700;
+  color: #424242;
+}
+
+.color-text2{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  color: #278FD7;
+  font-weight: 300;
+}
+
+.color-text3{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  color: #424242;
+  margin-top: 16px;
+}
+.color-palette{
+  display: flex;
+}
+
+.color1{
+  text-align: center;
+}
+
+.color1 p{
+  font-size: 20px;
+  color: #616161;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.color2{
+  margin-left: 32px;
+  text-align: center;
+}
+
+.color2 p{
+  font-size: 20px;
+  color: #616161;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.color3{
+  margin-left: 32px;
+  text-align: center;
+}
+
+.color3 p{
+  font-size: 20px;
+  color: #616161;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.metaverse-link{
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+
+.link-lobby{
+  width: 640px;
+  height: 348px;
+  background-image: url('https://i.postimg.cc/0yjJ0J2V/image-155.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link-fair{
+  background-image: url('https://i.postimg.cc/hvKXzX5b/image-162.png');
+  width: 640px;
+  height: 348px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link-headline{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #424242;
+  text-align: center;
+  margin-top: 160px;
+}
+
+.lobby-text{
+  width: 640px;
+  height: 348px;
+  border-radius: 24px 0 0 24px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; 
+}
+
+.fair-text{
+  width: 640px;
+  height: 348px;
+  border-radius: 0px 24px 24px 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; 
+}
+
+.link-lobby:hover .lobby-text{
+  opacity: 1;
+}
+
+.link-fair:hover .fair-text{
+  opacity: 1;
+}
+
+.link-space-name{
+  padding-top: 120px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+}
+
+.square{
+  width: 32px;
+  height: 8px;
+  background-color: white;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.link-func{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: regular;
+  color: white;
+}
+
+.foot{
+  margin-top: 122px;
+  width: 100%;
+  height: 197px;
+  background-color: #003166;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left{
+  margin-left: 48px;
+}
+
+.footer-right{
+  margin-right: 48px;
+}
+.footer-right .footer-icons{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.footer-icons i{
+  margin-left: 32px;
+  color: white;
+}
+
+.footer-right .copyright{
+  color: white;
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.footer-right .TEL{
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.footer-home{
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 16px;
+  border: 4px solid white;
+  border-radius: 36px;
+}
+  </style>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/9be7b2bfa9.js" crossorigin="anonymous"></script>
+   <title>Introduction</title>
+ </head>
+ <body>
+   <div class = "header">
+    <div class = "nav"> 
+       <a class = "logo" href = "main.html"><img class = "logo" src = "https://i.postimg.cc/kX0YVj8K/logo-4.png"></img></a>
+     
+     <a class = "btn" href = "https://hubs.mozilla.com/BrbwGjN/">메타버스 전시관</a> 
+   
+   <ul class = "category">
+        <li><a class = "ct1" href = "Introduction.html">행사소개</a></li>
+        <li><a class = "ct2" href = "companies.html">참가기업</a></li>
+        <li><a class = "ct3" href = "metaverse.html">메타버스</a></li>
+      </ul>  
+     </div> 
+   
+   <div class = "text">
+   <p class = "main-text">Make Another Leap Forward
+<br>With Enterprising Vision.</p>
+   <p class = "sub-text">한국공학대학교는 국내의 다양한 분야의 기업체와<br>협력하여 새로운 비전을 써내려갑니다.</p>
+   </div>
+   </div>
+   
+<div class = "sec_a">
+  <h1 class = "name">메타버스 전시</h1>
+  <p class = "eng_name">Metaverse Exhibition</p>
+  <div class = "square"></div>
+  <p class = "explain">컴퍼니 페어를 가상현실에서 만나다</p>
+</div>
+
+<div class = "intro1">
+ <div class = "image"> 
+  <img class = "intro-img1" src = "https://i.postimg.cc/Kcqq3V8s/Rectangle-12.png"></img>
+  </div>
+<div class = "intro-text"> 
+  <p class = "intro-text1">메타버스, 세계적 트렌드</p>
+  <p class = "intro-text2">Metaverse, Global Trend</b></p>
+  <p class = "intro-text3">지난 2020년 코로나19가 전 세계를 강타하면서 전세계는 언택트 사회로
+접어들게 되었습니다. 이런 범지구적 흐름과 가상현실 기술의 발전이 맞
+물려 가상 공간을 뜻하는 메타버스가 주요 트렌드로 급부상함에 따라,
+한국공학대학교도 이 흐름에 발맞춰 메타버스 플랫폼인 ‘Mozilla Hubs’
+에 컴퍼니 페어의 전시 공간을 재현했습니다. 사용자들은 언제 어디서나전시 공간에  접속해 오프라인 전시의 대부분의 컨텐츠를 체험할 수 있고,
+다른 접속자와 대화하며 소통할 수 있습니다.</p>
+</div>  
+</div>
+
+<div class = "con_a">
+<div class = "metaverse-intro">
+  <h2><span style = "color: #278FD7;"> TU - METAVERSE</span>, TUK의 첫 메타버스 박람회</h2>
+  <p>TU - METAVERSE는 다목적 컨텐츠 공간인 로비와, 박람회 공간인 컴퍼니 페어 스페이스로 나뉩니다.</p>
+</div>
+
+<div class = "metaverse-space">
+  <div class = "lobby">
+  <p class = "AB">A</p>
+  <img src = "https://i.postimg.cc/xTG9phL2/image-155.png"></img>
+  <p class = "space-name">로비 공간</p>
+  </div>
+
+  <div class = "fair">
+  <p class = "AB">B</p>
+  <img src = "https://i.postimg.cc/x10nw5Pb/image-167.png"></img>
+  <p class = "space-name">기업 박람회 공간</p>
+  </div>
+</div>  
+</div>
+</div>
+
+<div class = "identity-color">
+  <div class = "color-text">
+    <p class = "color-text1">아이덴티티 컬러로 TUK의 정체성을 살리다</p>
+  <p class = "color-text2">Identity Colors</b></p>
+  <p class = "color-text3">TU - METAVERSE에는 한국공학대학교의 아이덴티티<br>컬러가 적극 사용되었습니다. 총 세 가지 색상을<br>메인컬러로 사용하되 무채색을 적극 활용하여<br>공학대학에 맞는 분위기를 연출하였습니다.</p>
+  </div> 
+  
+  <div class = "color-palette">
+    
+    <div class = "color1">
+      <img src = "https://i.postimg.cc/fTWVY5FZ/Ellipse-  7.png"></img>
+    <p>#1758A8</p>
+    </div>
+
+    <div class = "color2">
+      <img src = "https://i.postimg.cc/4N8mPVkc/Ellipse-8.png"></img>
+    <p>#068FD3</p>
+      </div>
+
+    <div class = "color3">
+      <img src = "https://i.postimg.cc/htfh5vc5/Ellipse-9.png"></img>
+    <p>#01B3CD</p>
+      </div>
+  </div>
+</div>
+
+<p class = "link-headline">TU 메타버스 접속 링크</p>
+<div class = "metaverse-link">
+  
+  <div class = "link-lobby">
+    <div Onclick="location.href ='https://hubs.mozilla.com/BrbwGjN/'" style="cursor:pointer;" class = "lobby-text">
+      <p class = "link-space-name">로비<p>
+      <div class = "square"></div>
+      <p class = "link-func">메인로비, 강당, 모의면접실</p>
+    </div>
+  </div>
+  
+  <div class = "link-fair">
+    <div class = "fair-text">
+      <div Onclick="location.href ='https://hubs.mozilla.com/q5qVoBW/'" style="cursor:pointer;" class = "fair-text">
+      <p class = "link-space-name">로비<p>
+      <div class = "square"></div>
+      <p class = "link-func">메인로비, 강당, 모의면접실</p>
+    </div>
+    </div>
+  </div>
+  
+  
+</div>
+<div class = "foot">
+ <div class = "footer-left"> 
+  <img clas = "footer-img" src = "https://i.postimg.cc/kX0YVj8K/logo-4.png"></img>
+</div>
+  
+<div class = "footer-right">
+  <div class = "footer-icons">
+    <i class="fa-brands fa-facebook fa-2x"></i>
+    <i class="fa-solid fa-share-nodes fa-2x"></i>
+    <i class="fa-solid fa-house fa-2x"></i>
+    <p class = "footer-home">HOME</p>
+  </div>
+  <p class = "copyright">Copyright TECH UNIVERSITY OF KOREA. All rights reserved.</p>
+  <p class = "TEL">TEL. 031-8041-0115 | FAX. 031-8041-0118</p>
+</div>
+
+</body>
+</html>

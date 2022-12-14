@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.header{
+  width: 100%;
+  height: 680px;
+  background-image: url('https://i.postimg.cc/nV3bsry4/headway-F2-KRf-Qf-Cqw-unsplash-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .logo{
+  width: 275px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav{
+  padding-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn{
+  font-family: 'Noto Sans KR', sans-serif;
+  display: inline-block;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 36px;
+  border: solid 4px white;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  transition: all 0.6s; 
+}
+
+.btn:hover{
+  background-color: white;
+  color: #278FD7;
+  font-weight: 800;
+}
+
+.nav .category{
+  display: flex;
+  list-style: none;
+  margin-right: 80px;
+}
+
+.category li a{
+  positon: inline-block;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.ct2{
+  margin-left: 24px;
+}
+
+.ct3{
+  margin-left: 24px;
+}
+.category li a:before{
+  content: '';
+  position: absolute;
+  background-color: #278FD7;
+  height: 3px;
+  margin-top: 36px;
+  width: 0px;
+  
+  transition: all 0.3s ease;
+}
+
+.category li a:hover:before{
+  width: 88px;
+}
+
+.text{
+  margin-top: 136px;
+  margin-left: 80px;
+}
+.main-text{
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+}
+
+.sub-text{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: white;
+  margin-top: 16px;
+}
+
+.corp{
+  width: 1280px;
+  height: 92px;
+  background-color: white;
+  margin-top: 136px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.corp-logo{
+  text-align: center;
+}
+.corp img{
+  margin-right: 56px;
+  margin-top: 31px;
+}
+
+.corp img:nth-child(5) {
+  padding-bottom: 5px;
+}
+
+.intro{
+  width: 1280px;
+  margin-top: 112px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-text{
+  margin-right: 21px;
+}
+.intro-text1{
+  font-size: 24px;
+  font-weight: 300;
+  color: #5AA2E7;
+}
+
+.intro-text2{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 8px;
+  font-size: 32px;
+  font-weight: medium;
+  color: #278FD7;
+}
+
+.intro-text3{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 16px;
+  font-size: 20px;
+  color: #424242;
+  font-weight: 300;
+}
+
+.sec_a{
+  text-align: center;
+  margin-top: 96px;
+}
+
+.name{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #424242;
+}
+
+.eng_name{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  color: #278FD7;
+  font-weight: regular;
+}
+
+.explain{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: #424242;
+  font-weight: medium;
+}
+
+.con_a{
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.sec_a{
+ padding-top: 64px;
+}
+
+.sec_a div{
+ width: 32px;
+ height: 8px;
+ background-color: #278FD7;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 16px;
+ margin-bottom: 16px;
+}
+
+.company{
+  width: 1126px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  padding-bottom: 64px;
+}
+
+.company-logo1{
+  filter: drop-shadow(0px 6px 8px  rgba(0, 0, 0, 0.5));
+}
+
+.company-logo1:hover{
+  transform: scaleY(1.005);
+  transition: all 0.3s ease-in-out; 
+  transform: translateY(-5px);
+}
+
+.company-logo1:hover{
+  transform: translateY(-5px);
+}
+
+.company-logo2{
+  filter: drop-shadow(0px 6px 8px  rgba(0, 0, 0, 0.5));
+}
+
+.company-logo2:hover{
+  transform: scaleY(1.005);
+  transition: all 0.3s ease-in-out; 
+  transform: translateY(-5px);
+}
+
+.company-logo3{
+  filter: drop-shadow(0px 6px 8px  rgba(0, 0, 0, 0.5));
+}
+
+.company-logo3:hover{
+  transform: scaleY(1.005);
+  transition: all 0.3s ease-in-out; 
+  transform: translateY(-5px);
+}
+
+.company-logo4{
+  filter: drop-shadow(0px 6px 8px  rgba(0, 0, 0, 0.5));
+}
+
+.company-logo4:hover{
+  transform: scaleY(1.005);
+  transition: all 0.3s ease-in-out; 
+  transform: translateY(-5px);
+}
+
+.company-logo5{
+  filter: drop-shadow(0px 6px 8px  rgba(0, 0, 0, 0.5));
+}
+
+.company-logo5:hover{
+  transform: scaleY(1.005);
+  transition: all 0.3s ease-in-out; 
+  transform: translateY(-5px);
+}
+
+.company div{
+  text-align: center;
+}
+
+.company div p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #616161;
+  margin-top: 16px;
+}
+
+.sec_b{
+  width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 96px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.b-text{
+  width: 640px;
+  height: 328px;
+}
+
+.b-main-text{
+  margin-top: 36px;
+  margin-left: 16px;
+}
+
+.b-main-text1{
+  color: #278FD7;
+  font-size: 48px;
+}
+
+.b-main-text2{
+  color: #424242;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  margin-top: 24px;
+}
+
+.b-main-text3{
+  color: #616161;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.b-image-text{
+  margin-top: 236px;
+  margin-left: 32px;
+  color: white;
+}
+
+.b-image-text1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.b-image-text2{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  margin-top: 8px;
+}
+.b-image1{
+  width: 640px;
+  height: 328px;
+  background-image: url('https://i.postimg.cc/Qd6RZ027/Rectangle-10.png');
+}
+
+.b-image1:hover{
+  filter: brightness(0.7);
+  transition: all 0.3s ease-in-out; 
+}
+
+.b-image2{
+  width: 640px;
+  height: 328px;
+  background-image: url('https://i.postimg.cc/13HCQczD/evangeline-shaw-Bd-V23-FLkmx-Q-unsplash-1.png');
+}
+
+.b-image2:hover{
+  filter: brightness(0.7);
+  transition: all 0.3s ease-in-out; 
+}
+
+.b-image3{
+  width: 640px;
+  height: 328px;
+  background-image: url('https://i.postimg.cc/Y9J83dXB/guerrillabuzz-blockchain-pr-agency-c-FPGu-Mdk-Xek-unsplash-1.png');
+}
+
+.b-image3:hover{
+  filter: brightness(0.7);
+  transition: all 0.3s ease-in-out; 
+}
+
+.sec_c{
+  width: 1280px;
+  margin-top: 160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sec_c .name2{
+  color: #424242;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.sec_c .eng_name2{
+  font-size: 20px;
+  color: #616161;
+}
+.news{
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news_img1{
+  width: 624px;
+  height: 280px;
+  background-image: url('https://i.postimg.cc/fycVghns/Rectangle-1.png');
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+}
+
+.news_img2{
+  width: 624px;
+  height: 280px;
+  background-image: url('https://i.postimg.cc/JzTT0fyP/Rectangle-55.png');
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+}
+
+.news-date{
+  display: inline-block;
+  margin-left: 484px;
+  text-align: left;
+  padding: 8px 16px;
+  background-color: #278FD7;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.news-name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #424242;
+  margin-top: 16px;
+}
+
+.news-subname{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  color: #616161;
+}
+
+iframe{
+  margin-top: 160px;
+  width: 100%;
+  height: 736px;
+}
+
+.map{
+  position: relative;
+  width: 100%;
+  height: 736px;
+}
+
+.blue{
+  position: absolute;
+  background-color: #278FD7;
+  width: 78px;
+  height: 396px;
+  bottom: 30px;
+  text-align: center;
+}
+
+.blue i{
+  color: white;
+  margin-top: 329px;
+}
+.location{
+  position: absolute;
+  width: 578px;
+  height: 396px;
+  background-color: white;
+  bottom: 30px;
+  left: 78px;
+}
+
+.location-text{
+  margin-left: 40px;  
+}
+
+.info-title{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  color: #278FD7;
+  margin-top: 32px;
+}
+
+.info-title-eng{
+  font-size: 20px;
+  color: #616161;
+  font-weight: 700;
+}
+
+.location-kor{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #424242;
+  margin-top: 16px;
+}
+
+.location-eng{
+  color: #616161;
+  font-weight: 300;
+}
+
+.line{
+  width: 504px;
+  height: 1px;
+  background-color: #d9d9d9;
+  margin-left: 40px;
+  margin-top: 16px;
+}
+
+.time{
+  display: flex;
+  align-items: center;
+  margin-left: 48px;
+  margin-top: 16px;
+}
+
+.time i{
+  color: #278FD7; 
+}
+
+.time-text{
+  margin-left: 16px;
+}
+
+.info-subtitle{
+  color: #278FD7;
+  font-weight: 700;
+}
+
+.time-text .date{
+  margin-top: 4px;
+  color: #424242;
+  font-weight: 500;
+}
+
+.time-text .number{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 4px;
+  color: #424242;
+  font-weight: 300;
+}
+
+.foot{
+  margin-top: 160px;
+  width: 100%;
+  height: 197px;
+  background-color: #003166;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left{
+  margin-left: 48px;
+}
+
+.footer-right{
+  margin-right: 48px;
+}
+.footer-right .footer-icons{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.footer-icons i{
+  margin-left: 32px;
+  color: white;
+}
+
+.footer-right .copyright{
+  color: white;
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.footer-right .TEL{
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.footer-home{
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 16px;
+  border: 4px solid white;
+  border-radius: 36px;
+}
+  </style>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/9be7b2bfa9.js" crossorigin="anonymous"></script>
+   <title>Main</title>
+ </head>
+ <body>
+   <div class = "header">
+    <div class = "nav"> 
+      
+       <a class = "logo" href = "main.html"><img class = "logo" src = "https://i.postimg.cc/kX0YVj8K/logo-4.png"></img></a>
+   
+     <a class = "btn" href = "https://hubs.mozilla.com/BrbwGjN/">메타버스 전시관</a> 
+   
+   <ul class = "category">
+        <li><a class = "ct1" href = "Introduction.html">행사소개</a></li>
+        <li><a class = "ct2" href = "companies.html">참가기업</a></li>
+        <li><a class = "ct3" href = "metaverse.html">메타버스</a></li>
+      </ul>  
+     </div> 
+   
+   <div class = "text">
+   <p class = "main-text">Make Another Leap Forward
+<br>With Enterprising Vision.</p>
+   <p class = "sub-text">한국공학대학교는 국내의 다양한 분야의 기업체와<br>협력하여 새로운 비전을 써내려갑니다.</p>
+   </div>
+   <div class = "corp">
+    <div class = "corp-logo"> 
+     <img src ="https://i.postimg.cc/Px7DKc2f/Logo-of-TECH-UNIVERSITY-OF-KOREA-1.png"></img>
+   <img src = "https://i.postimg.cc/JhPZHtXk/linc-logo-1.png"></img>
+   <img src = "https://i.postimg.cc/dVc8zbvL/img-mi-1.png"></img>
+   <img src = "https://i.postimg.cc/nrs4JZCQ/img-1-1.png"></img>
+<img src = "https://i.postimg.cc/pybFMFwg/jpg-1.png"></img>
+</div>
+   </div>
+   </div>
+
+<div class = "intro">
+ <div class = "image"> 
+  <img class = "intro-img" src = "https://i.postimg.cc/c4RXspZt/jonas-morgner-F7u5f-L11-Lt0-unsplash-1.png"></img>
+  </div>
+<div class = "intro-text"> 
+  <p class = "intro-text1">Tech University of Korea Company fair</p>
+  <p class = "intro-text2">한국공학대학교와 기업이 함께하는<br>온-오프라인 기업 박람회, <b>컴퍼니 페어</b></p>
+  <p class = "intro-text3">한국공학대학교에서는 개교 이래로 우수 산업기술 인재의 양성과 대<br>한민국 산업의 발전을 위해 다양한 기업 연계형 박람회를 개최해왔습<br>니다. 그리고 2022년 10월, 다양한 분야의 우수기업이 한 자리에 모<br>였습니다. 컴퍼니 페어는 기업과 학생간의 대표적인 산학관 교류의<br>장이 될 것입니다.</p>
+</div>  
+</div>
+
+<div class = "con_a">
+<div class = "sec_a">
+  <h1 class = "name">주요 참석 기업</h1>
+  <p class = "eng_name">Attending Companies</p>
+  <div class = "square"></div>
+  <p class = "explain">한국 산업을 이끌어가고 있는 다양한 기업이 컴퍼니 페어에 참석하였습니다.</p>
+</div>
+
+<div class = "company">
+  
+  <div class = "logo1">
+    <img class = "company-logo1" src = "https://i.postimg.cc/Prz5knfR/posco.png"></img>
+  <p>포스코</p>
+  </div>
+
+<div class = "logo2">
+    <img class = "company-logo2" src = "https://i.postimg.cc/mgSDsfjr/krafton.png"></img>
+  <p>크래프톤</p>
+  </div>
+
+<div class = "logo3">
+    <img class = "company-logo3" src = "https://i.postimg.cc/tCXwMKsk/sk.png"></img>
+  <p>SK 쉴더스</p>
+  </div>
+
+<div class = "logo4">
+    <img class = "company-logo4" src = "https://i.postimg.cc/qBGZy113/netmarble.png"></img>
+  <p>넷마블 네오</p>
+  </div>
+
+<div class = "logo5">
+    <img class = "company-logo5" src = "https://i.postimg.cc/mgKdBJg0/dongwon.png"></img>
+  <p>동원그룹</p>
+  </div>
+</div>
+</div>
+
+<div class = "sec_b">
+  <div class = "b-text">
+    <div class = "b-main-text">
+    <p class = "b-main-text1">Tech University of Korea<br>
+      <b>COMPANY FAIR:</b></p>
+    <p class = "b-main-text2">4차 산업 혁명시대의 새 활로를 모색하다.</p>
+    <p class = "b-main-text3">Company Fair will explore a new path in the era<br>
+of the Fourth Industrial Revolution</p>
+    </div>  
+  </div>
+  
+  <div OnClick="location.href ='companies.html'" style="cursor:pointer;" class = "b-image1">
+   <div class = "b-image-text">
+    <p class = "b-image-text1">컴퍼니 페어, 기업과 함께 산업의 미래를 탐색하다</p>
+    <p class = "b-image-text2">컴퍼니 페어 참가기업 페이지 들어가기</p>
+   </div>  
+  </div>
+  
+  <div OnClick="location.href ='Introduction.html'" style="cursor:pointer;" class = "b-image2">
+    <div class = "b-image-text">
+    <p class = "b-image-text1">What is Company Fair?</p>
+    <p class = "b-image-text2">컴퍼니 페어 소개 페이지 들어가기</p>
+   </div>  
+  </div>
+  
+  <div OnClick="location.href ='metaverse.html'" style="cursor:pointer;" class = "b-image3">
+    <div class = "b-image-text">
+    <p class = "b-image-text1">박람회 + 메타버스</p>
+    <p class = "b-image-text2">컴퍼니 페어 메타버스 페이지 들어가기</p>
+   </div>  
+  </div>
+</div>
+
+<div class = "sec_c">
+  <h2 class = "name2">TUK 컴퍼니 페어 <span style = "color:#278FD7;">새소식</span></h2>
+  <p class = "eng_name2">TUK Company fair News</p>
+</div>
+
+<div class = "news">
+<div class = "news1"> 
+ <div OnClick="location.href ='#'" style="cursor:pointer;" class = "news_img1">
+  <p class = "news-date">2022/10/14<p>
+ </div>
+  <p class = "news-name">한국공학대학교 주최 컴퍼니 페어 성황리에 개최</p>
+  <p class = "news-subname">한국공학대학교서 첫 메타버스 접목형 박람회 개최되어...</p>
+ </div>  
+ <div class = "news1">  
+  <div OnClick="location.href ='#'" style="cursor:pointer;" class = "news_img2">
+  <p class = "news-date">2022/10/14<p>
+ </div>
+   <p class = "news-name">다양한 기업인들 컴퍼니 페어에 모여</p>
+  <p class = "news-subname">국내 기업 - 해외 기업 간의 교류 활성화 도모</p>
+</div>   
+</div>
+
+<div class = "map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.0458040682527!2d126.73082563152829!3d37.340339853656715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b71084954ce5f%3A0xb676df1bd97c059!2z7ZWc6rWt6rO17ZWZ64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1670773478926!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<div class = "info">  
+  <div class = "blue">
+    <i class="fa-solid fa-location-dot fa-2x"></i>
+  </div>
+<div class = "location">
+ <div class = "location-text"> 
+  <h3 class = "info-title">오프라인 행사 정보</h3>
+  <p class = "info-title-eng">Offline Information</p>
+  <p class = "location-kor">경기도 시흥시 산기대학로 237 교내 체육관</p>
+  <p class = "location-eng">Gymnasium, 237, Sangidaehak-ro, Siheung-si, Gyeonggi-do</p>
+</div>
+  <div class = "line"></div>
+  
+  <div class = "time">
+     <i class="fa-regular fa-clock fa-2x"></i>
+   <div class = "time-text"> 
+    <p class = "info-subtitle">Operation Hours</p>
+    <p class = "date">10/10(Mon) ~ 10/14(Fri)<br>
+        10:00 ~ 17:00 </p>
+    </div>  
+  </div>
+  
+  <div class = "line"></div>
+  
+  <div class = "time">
+     <i class="fa-solid fa-phone fa-2x"></i>
+   <div class = "time-text"> 
+    <p class = "info-subtitle">Call</p>
+    <p class = "number">한국공학대학교 대학 일자리+ 센터<br>
+      <b>031-8041-0127</b> </p>
+    </div>  
+  </div>
+  
+</div> 
+</div>  
+</div>
+
+<div class = "foot">
+ <div class = "footer-left"> 
+  <img clas = "footer-img" src = "https://i.postimg.cc/kX0YVj8K/logo-4.png"></img>
+</div>
+  
+<div class = "footer-right">
+  <div class = "footer-icons">
+    <i class="fa-brands fa-facebook fa-2x"></i>
+    <i class="fa-solid fa-share-nodes fa-2x"></i>
+    <i class="fa-solid fa-house fa-2x"></i>
+    <p class = "footer-home">HOME</p>
+  </div>
+  <p class = "copyright">Copyright TECH UNIVERSITY OF KOREA. All rights reserved.</p>
+  <p class = "TEL">TEL. 031-8041-0115 | FAX. 031-8041-0118</p>
+</div>
+</div>
+
+<script type="text/javascript">
+  (function(w, d, a){
+      w.__beusablerumclient__ = {
+          load : function(src){
+              var b = d.createElement("script");
+              b.src = src; b.async=true; b.type = "text/javascript";
+              d.getElementsByTagName("head")[0].appendChild(b);
+          }
+      };w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
+  })(window, document, "//rum.beusable.net/load/b221215e021050u345");
+  </script>
+ </body>
+ </html>

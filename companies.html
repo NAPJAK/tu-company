@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.header{
+  width: 100%;
+  height: 680px;
+  background-image: url('https://i.postimg.cc/k4RyCtMq/product-school-n-Ov-Ia-x-tfo-unsplash-2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .logo{
+  width: 275px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav{
+  padding-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn{
+  font-family: 'Noto Sans KR', sans-serif;
+  display: inline-block;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 36px;
+  border: solid 4px white;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  transition: all 0.6s; 
+}
+
+.btn:hover{
+  background-color: white;
+  color: #278FD7;
+  font-weight: 800;
+}
+
+.nav .category{
+  display: flex;
+  list-style: none;
+  margin-right: 80px;
+}
+
+.category li a{
+  positon: inline-block;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.ct2{
+  margin-left: 24px;
+}
+
+.ct3{
+  margin-left: 24px;
+}
+.category li a:before{
+  content: '';
+  position: absolute;
+  background-color: #278FD7;
+  height: 3px;
+  margin-top: 36px;
+  width: 0px;
+  
+  transition: all 0.3s ease;
+}
+
+.category li a:hover:before{
+  width: 88px;
+}
+
+.text{
+  margin-top: 136px;
+  margin-left: 80px;
+}
+.main-text{
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+}
+
+.sub-text{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: white;
+  margin-top: 16px;
+}
+
+.name{
+  text-align: center;
+  margin-top: 120px;
+}
+
+.name h1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+  color: #424242;
+}
+
+.name-eng{
+  font-size: 24px;
+  color: #278FD7;
+}
+
+.name .square{
+ width: 32px;
+ height: 8px;
+ background-color: #278FD7;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 16px;
+ margin-bottom: 16px;
+}
+
+.name-exp{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: #424242;
+  margin-top: 16px;
+}
+
+.line{
+  width: 100%;
+  height: 2px;
+  background-color: #d9d9d9;
+  margin-top: 56px;
+}
+
+.comp_category{
+  display: flex;
+  width: 708px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 12px;
+  margin-top: 56px;
+}
+
+.comp_category p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: #424242;
+  font-weight: bold;
+}
+
+.comp_category .one{
+  color: #278FD7;  
+}
+
+.companies{
+  width: 1328px;
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.company1{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/VsCK0qKP/krafton2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company1-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company1-text .theme1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company1-text .company1_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company1-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company1:hover .company1-text{
+  opacity: 1;
+}
+
+.company2{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/DzCrXkqJ/company2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company2-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company2-text .theme2{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company2-text .company2_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company2-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company2:hover .company2-text{
+  opacity: 1;
+}
+
+.company3{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/7LFTrHDk/1-4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company3-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company3-text .theme3{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company3-text .company3_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company3-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company3:hover .company3-text{
+  opacity: 1;
+}
+
+.company4{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/sg1cV2FQ/5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company4-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company4-text .theme4{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company4-text .company4_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company4-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company4:hover .company4-text{
+  opacity: 1;
+}
+
+.company5{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/G2Rgh1JW/6.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company5-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company5-text .theme5{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company5-text .company5_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company5-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company5:hover .company5-text{
+  opacity: 1;
+}
+
+.company6{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/gJDXX11X/7-4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company6-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company6-text .theme6{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company6-text .company6_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company6-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company6:hover .company6-text{
+  opacity: 1;
+}
+
+.company7{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/T3QLkztR/12.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company7-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company7-text .theme7{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company7-text .company7_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company7-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company7:hover .company7-text{
+  opacity: 1;
+}
+
+.company8{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/DwQd7p5D/13.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company8-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company8-text .theme8{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company8-text .company8_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company8-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company8:hover .company8-text{
+  opacity: 1;
+}
+
+.company9{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/X71cqy0K/14.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company9-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company9-text .theme9{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company9-text .company9_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company9-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company9:hover .company9-text{
+  opacity: 1;
+}
+
+.company10{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/gJ9PWJJm/15.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company10-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company10-text .theme10{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company10-text .company10_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company10-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company10:hover .company10-text{
+  opacity: 1;
+}
+
+.company11{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/VN8RPP82/16.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company11-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company11-text .theme11{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company11-text .company11_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company11-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company11:hover .company11-text{
+  opacity: 1;
+}
+
+.company12{
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+  width: 296px;
+  height: 165px;
+  margin-bottom: 64px;
+  background-image: url('https://i.postimg.cc/j5ZYBrDh/17.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company12-text{
+  width: 296px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  opacity: 0;
+   transition: all 0.3s ease-in-out; 
+}
+
+.company12-text .theme12{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.company12-text .company12_name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company12-text .join{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.company12:hover .company12-text{
+  opacity: 1;
+}
+
+.comp_category{
+  position: relative;
+}
+
+.comp_category p:before{
+  content: '';
+  position: absolute;
+  background-color: #278FD7;
+  height: 3px;
+  margin-top: 36px;
+  width: 0px;
+  
+  transition: all 0.3s ease;
+}
+
+.comp_category .one:hover:before{
+  width: 67px;
+}
+
+.comp_category .two:hover:before{
+  width: 45px;
+}
+
+.comp_category .three:hover:before{
+  width: 45px;
+}
+
+.comp_category .four:hover:before{
+  width: 88px;
+}
+
+.comp_category .five:hover:before{
+  width: 111px;
+}
+
+.comp_category .six:hover:before{
+  width: 111px;
+}
+
+.foot{
+  margin-top: 48px;
+  height: 197px;
+  background-color: #003166;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left{
+  margin-left: 48px;
+}
+
+.footer-right{
+  margin-right: 48px;
+}
+.footer-right .footer-icons{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.footer-icons i{
+  margin-left: 32px;
+  color: white;
+}
+
+.footer-right .copyright{
+  color: white;
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.footer-right .TEL{
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.footer-home{
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 16px;
+  border: 4px solid white;
+  border-radius: 36px;
+}
+  </style>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/9be7b2bfa9.js" crossorigin="anonymous"></script>
+   <title>Introduction</title>
+ </head>
+ <body>
+   <div class = "header">
+    <div class = "nav"> 
+       <a class = "logo" href = "main.html"><img class = "logo" src = "https://i.postimg.cc/kX0YVj8K/logo-4.png"></img></a>
+     
+     <a class = "btn" href = "https://hubs.mozilla.com/BrbwGjN/">메타버스 전시관</a> 
+   
+   <ul class = "category">
+        <li><a class = "ct1" href = "Introduction.html">행사소개</a></li>
+        <li><a class = "ct2" href = "companies.html">참가기업</a></li>
+        <li><a class = "ct3" href = "metaverse.html">메타버스</a></li>
+      </ul>  
+     </div> 
+   
+   <div class = "text">
+   <p class = "main-text">Make Another Leap Forward
+<br>With Enterprising Vision.</p>
+   <p class = "sub-text">한국공학대학교는 국내의 다양한 분야의 기업체와<br>협력하여 새로운 비전을 써내려갑니다.</p>
+   </div>
+   </div>
+
+   <div class = "name">
+     <h1>참석 기업</h1>
+     <p class = "name-eng">Attending Companies</p>
+     <div class = "square"></div>
+     <p class = "name-exp">컴퍼니 페어에 참석한 기업체들을 알아보세요.</p>
+     
+     <div class ="line"></div>
+     
+     <div class = "comp_category">
+       <p class = "one">컴퓨터</p>
+       <p class = "two">기계</p>
+       <p class = "three">게임</p>
+       <p class = "four">생명화학</p>
+       <p class = "five">나노반도체</p>
+       <p class = "six">에너지전기</p>
+     </div>  
+   </div>  
+   
+  <div class = "section_2"> 
+   <div class = "companies">
+     <div class = "company1">
+      <div OnClick="location.href ='https://www.krafton.com/'" style="cursor:pointer;" class = "company1-text"> 
+       <p class = "theme1">컴퓨터</p>
+       <p class = "company1_name">크래프톤</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company2">
+      <div OnClick="location.href ='https://www.keyence.co.kr/'" style="cursor:pointer;" class = "company2-text"> 
+       <p class = "theme2">컴퓨터</p>
+       <p class = "company2_name">키엔스</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company3">
+      <div OnClick="location.href ='http://www.essys.co.kr/ko/index.html'" style="cursor:pointer;" class = "company3-text"> 
+       <p class = "theme3">컴퓨터</p>
+       <p class = "company3_name">이씨스</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company4">
+      <div OnClick="location.href ='https://www.ezcaretech.com/'" style="cursor:pointer;" class = "company4-text"> 
+       <p class = "theme4">컴퓨터</p>
+       <p class = "company4_name">이지케어텍</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company5">
+      <div OnClick="location.href ='https://e-mps.co.kr/'" style="cursor:pointer;" class = "company5-text"> 
+       <p class = "theme5">컴퓨터</p>
+       <p class = "company5_name">엠피에스</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company6">
+      <div OnClick="location.href ='http://www.s-fuelcell.com/'" style="cursor:pointer;" class = "company6-text"> 
+       <p class = "theme6">컴퓨터</p>
+       <p class = "company6_name">에스퓨얼셀</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company7">
+      <div OnClick="location.href ='http://www.truen.co.kr/'" style="cursor:pointer;" class = "company7-text"> 
+       <p class = "theme7">컴퓨터</p>
+       <p class = "company7_name">주식회사 트루엔</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company8">
+      <div OnClick="location.href ='https://aproele.com/'" style="cursor:pointer;" class = "company8-text"> 
+       <p class = "theme8">컴퓨터</p>
+       <p class = "company8_name">에이프로</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company9">
+      <div OnClick="location.href ='http://m.sensohub.co.kr/'" style="cursor:pointer;" class = "company9-text"> 
+       <p class = "theme9">컴퓨터</p>
+       <p class = "company9_name">센소허브</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company10">
+      <div OnClick="location.href ='https://www.dongwon.com/'" style="cursor:pointer;" class = "company10-text"> 
+       <p class = "theme10">컴퓨터</p>
+       <p class = "company10_name">동원그룹</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company11">
+      <div OnClick="location.href ='https://www.skshieldus.com/kor/index.do'" style="cursor:pointer;" class = "company11-text"> 
+       <p class = "theme11">컴퓨터</p>
+       <p class = "company11_name">SK쉴더스</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+     
+     <div class = "company12">
+      <div OnClick="location.href ='https://www.com2us.com/'" style="cursor:pointer;" class = "company12-text"> 
+       <p class = "theme12">컴퓨터</p>
+       <p class = "company12_name">컴투스</p>
+       <p class = "join">홈페이지 접속하기</p>
+       </div>
+     </div>
+   </div> 
+  </div> 
+   <div class = "foot">
+ <div class = "footer-left"> 
+  <img clas = "footer-img" src = "https://i.postimg.cc/kX0YVj8K/logo-4.png"></img>
+</div>
+  
+<div class = "footer-right">
+  <div class = "footer-icons">
+    <i class="fa-brands fa-facebook fa-2x"></i>
+    <i class="fa-solid fa-share-nodes fa-2x"></i>
+    <i class="fa-solid fa-house fa-2x"></i>
+    <p class = "footer-home">HOME</p>
+  </div>
+  <p class = "copyright">Copyright TECH UNIVERSITY OF KOREA. All rights reserved.</p>
+  <p class = "TEL">TEL. 031-8041-0115 | FAX. 031-8041-0118</p>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.header{
+  width: 100%;
+  height: 680px;
+  background-image: url('https://i.postimg.cc/k4RyCtMq/product-school-n-Ov-Ia-x-tfo-unsplash-2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .logo{
+  width: 275px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav{
+  padding-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn{
+  font-family: 'Noto Sans KR', sans-serif;
+  display: inline-block;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 36px;
+  border: solid 4px white;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  transition: all 0.6s; 
+}
+
+.btn:hover{
+  background-color: white;
+  color: #278FD7;
+  font-weight: 800;
+}
+
+.nav .category{
+  display: flex;
+  list-style: none;
+  margin-right: 80px;
+}
+
+.category li a{
+  position: inline-block;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.ct2{
+  margin-left: 24px;
+}
+
+.ct3{
+  margin-left: 24px;
+}
+.category li a:before{
+  content: '';
+  position: absolute;
+  background-color: #278FD7;
+  height: 3px;
+  margin-top: 36px;
+  width: 0px;
+  
+  transition: all 0.3s ease;
+}
+
+.category li a:hover:before{
+  width: 88px;
+}
+
+.text{
+  margin-top: 136px;
+  margin-left: 80px;
+}
+.main-text{
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+}
+
+.sub-text{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: white;
+  margin-top: 16px;
+}
+
+.name{
+  text-align: center;
+  margin-top: 120px;
+}
+
+.name h1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+  color: #424242;
+}
+
+.name p{
+  font-size: 24px;
+  color: #278FD7;
+}
+
+h2{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 80px;
+  color: #424242;
+}
+
+.intro1{
+  width: 1280px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.intro-text{
+  margin-left: 32px;
+}
+.intro-text1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #424242;
+}
+
+.intro-text2{
+  font-size: 24px;
+  font-weight: 300;
+  color: #5AA2E7;
+}
+
+.intro-text3{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 24px;
+  font-size: 20px;
+  color: #424242;
+  font-weight: 300;
+}
+
+.intro2{
+  width: 1280px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.intro2-text{
+  margin-right: 32px;
+  text-align: right;
+}
+.intro2-text1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #424242;
+}
+
+.intro2-text2{
+  font-size: 24px;
+  font-weight: 300;
+  color: #5AA2E7;
+}
+
+.intro2-text3{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 24px;
+  font-size: 20px;
+  color: #424242;
+  font-weight: 300;
+}
+
+.sec_a{
+  text-align: center;
+  margin-top: 160px;
+}
+
+.name{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #424242;
+}
+
+.eng_name{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  color: #278FD7;
+  font-weight: regular;
+}
+
+.sec_a div{
+ width: 32px;
+ height: 8px;
+ background-color: #278FD7;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 16px;
+ margin-bottom: 16px;
+}
+
+.explain{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: #424242;
+  font-weight: medium;
+  margin-top: 8px;
+}
+
+.identities{
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+
+.identity1{
+  width: 328px;
+  height: 317px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+}
+
+.identity1:hover{
+  transform: scaleY(1.005);
+  transition: all 0.3s ease-in-out; 
+  transform: translateY(-5px);
+}
+
+.identity2{
+  width: 328px;
+  height: 317px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+}
+
+.identity2:hover{
+  transform: scaleY(1.005);
+  transition: all 0.3s ease-in-out; 
+  transform: translateY(-5px);
+}
+
+.identity3{
+  width: 328px;
+  height: 317px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  filter: drop-shadow(0px 10px 8px  rgba(0, 0, 0, 0.5));
+}
+
+.identity3:hover{
+  transform: scaleY(1.005);
+  transition: all 0.3s ease-in-out; 
+  transform: translateY(-5px);
+}
+
+.container{
+  margin-top: 32px;
+  
+}
+.iden-name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  color: #278FD7;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.iden-exp{
+  margin-top: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #424242;
+}
+
+.foot{
+  margin-top: 112px;
+  width: 100%;
+  height: 197px;
+  background-color: #003166;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left{
+  margin-left: 48px;
+}
+
+.footer-right{
+  margin-right: 48px;
+}
+.footer-right .footer-icons{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.footer-icons i{
+  margin-left: 32px;
+  color: white;
+}
+
+.footer-right .copyright{
+  color: white;
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.footer-right .TEL{
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.footer-home{
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 16px;
+  border: 4px solid white;
+  border-radius: 36px;
+}
+  </style>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/9be7b2bfa9.js" crossorigin="anonymous"></script>
+   <title>Introduction</title>
+ </head>
+ <body>
+   <div class = "header">
+    <div class = "nav"> 
+       <a class = "logo" href = "main.html"><img class = "logo" src = "https://i.postimg.cc/kX0YVj8K/logo-4.png"></img></a>
+     
+     <a class = "btn" href = "https://hubs.mozilla.com/BrbwGjN/">메타버스 전시관</a> 
+   
+   <ul class = "category">
+        <li><a class = "ct1" href = "Introduction.html">행사소개</a></li>
+        <li><a class = "ct2" href = "Companies.html">참가기업</a></li>
+        <li><a class = "ct3" href = "metaverse.html">메타버스</a></li>
+      </ul>  
+     </div> 
+   
+   <div class = "text">
+   <p class = "main-text">Make Another Leap Forward
+<br>With Enterprising Vision.</p>
+   <p class = "sub-text">한국공학대학교는 국내의 다양한 분야의 기업체와<br>협력하여 새로운 비전을 써내려갑니다.</p>
+   </div>
+   </div>
+
+   <div class = "name">
+     <h1>행사 소개</h1>
+     <p>Event Introduction</p>
+   </div>  
+   
+   <div class = "intro1">
+ <div class = "image"> 
+  <img class = "intro-img1" src = "https://i.postimg.cc/Kcqq3V8s/Rectangle-12.png"></img>
+  </div>
+<div class = "intro-text"> 
+  <p class = "intro-text1">산업의 발전을 도모하다</p>
+  <p class = "intro-text2">promote industrial development</b></p>
+  <p class = "intro-text3">한국공학대학교에서는 개교 이래로 우수 산업기술 인재의 양성과 대한민국 산업의 발전을 위해 다양한 기업 연계형 박람회를 개최해왔습니다. 그리고 2022년 10월, 다양한 분야의 우수기업이 한 자리에 모였습니다. 컴퍼니 페어는 기업체에게는 자사 홍보 및 구직자와의 컨택의 장을, 지역청년과 학생에게는 진로에 대한 영감과 취업에 대한 탐색의 장입니다. 컴퍼니 페어에서는 학교, 기업체, 학생 및 지역청년이 서로 교류하고, 대한민국의 산학에 대해 논의하며, 더 나아가 대한민국 산업이 세계로 나아가야 할 방향을 도출합니다. </p>
+</div>  
+</div>
+
+<div class = "intro2">
+ <div class = "image"> 
+  <img class = "intro-img1" src = "https://i.postimg.cc/NGDV7DQZ/Rectangle-13.png"></img>
+  </div>
+<div class = "intro2-text"> 
+  <p class = "intro2-text1">메타버스와 박람회의 만남</p>
+  <p class = "intro2-text2">Contact of Metabus and Fair</b></p>
+  <p class = "intro2-text3">컴퍼니 페어에서는 기존의 한국공학대학교의 행사에서는 볼 수 없는 한 가지 새로운 시도를 하였습니다. 기존의 박람회에서 오프라인 외에도
+온라인 강의의 형태로 온라인 박람회를 진행하긴 하였으나, 실제로
+3D 공간에 박람회를 구현한 것은 이번이 처음으로써, 포스트 코로나로
+인한 언택트와 정보화 시대에 따라 전 세계적 트렌드로 부상한
+메타버스를 한국공학대학교의 박람회에 접목하였습니다. 메타버스
+박람회는 그저 홍보수단이 아닌, 미래의 트렌드를 탐색하고 수용하는
+한국공학대학교의 이념을 내포하고 있습니다.</p>
+</div>  
+</div>
+
+<div class = "sec_a">
+  <h1 class = "name">주요 아이덴티티</h1>
+  <p class = "eng_name">Identities</p>
+  <div class = "square"></div>
+  <p class = "explain">컴퍼니 페어는 총 3가지의 주요 아이덴티티를 가집니다.</p>
+</div>
+
+<div class = "identities">
+  <div class = "identity1">
+    <div class = "container"> 
+    <img src ="https://i.postimg.cc/26DW6nJx/icon-people-outline.png"></img>
+    <p class = "iden-name">협력</p>
+  <p class = "iden-exp">컴퍼니 페어는 <b>기업체와 학생, 학교간<br>의 협력 및 교류</b>를 통해 성공적인 산업<br>박람회가 될 수 있도록 노력합니다.</p>
+    </div>
+  </div>  
+  
+  <div class = "identity2">
+   <div class = "container"> 
+    <img src = "https://i.postimg.cc/d30Lk69G/icon-globe.png"></img>
+    <p class = "iden-name">포괄</p>
+<p class = "iden-exp">컴퍼니 페어에서는 국내에 국한되지 않고<br><b>세계화 시대에서 대한민국 산업이 나아가<br>야 할 길</b>을 논의합니다.</p>
+</div>  
+  </div>
+  
+  <div class = "identity3">
+    <div class = "container"> 
+    <img src = "https://i.postimg.cc/wvwBpJdM/icon-bulb-outline.png"></img>
+    <p class = "iden-name">발상</p>
+<p class = "iden-exp">컴퍼니 페어에서는 우수 기업들의 <b>창의적<br>인 문제해결 발상</b>을 통해 학생과 지역 청<br>년에게는 영감을 제공합니다.</p>
+    </div>  
+  </div>
+</div>
+
+<div class = "foot">
+ <div class = "footer-left"> 
+  <img clas = "footer-img" src = "https://i.postimg.cc/kX0YVj8K/logo-4.png"></img>
+</div>
+  
+<div class = "footer-right">
+  <div class = "footer-icons">
+    <i class="fa-brands fa-facebook fa-2x"></i>
+    <i class="fa-solid fa-share-nodes fa-2x"></i>
+    <i class="fa-solid fa-house fa-2x"></i>
+    <p class = "footer-home">HOME</p>
+  </div>
+  <p class = "copyright">Copyright TECH UNIVERSITY OF KOREA. All rights reserved.</p>
+  <p class = "TEL">TEL. 031-8041-0115 | FAX. 031-8041-0118</p>
+</div>
+</div>
+
+<script type="text/javascript">
+  (function(w, d, a){
+      w.__beusablerumclient__ = {
+          load : function(src){
+              var b = d.createElement("script");
+              b.src = src; b.async=true; b.type = "text/javascript";
+              d.getElementsByTagName("head")[0].appendChild(b);
+          }
+      };w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
+  })(window, document, "//rum.beusable.net/load/b221215e021050u345");
+  </script>
+</body>
+</html>
